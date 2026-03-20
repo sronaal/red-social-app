@@ -2,6 +2,7 @@ import { Icon } from "@iconify/react"
 import { NavLink } from "react-router-dom"
 import { BtnToggleTheme } from "../ui/button/BtnToggleTheme"
 import { BtnLogout } from "../ui/button/BtnLogout"
+import { BtnNewPost } from "../ui/button/BtnNewPost"
 
 export const Sidebar = () => {
 
@@ -46,7 +47,7 @@ export const Sidebar = () => {
 
 
   return (
-    <div className='h-screen p-2 bg-white dark:bg-bg-dark transition-all duration-300'>
+    <div className='h-screen p-2 bg-white dark:bg-bg-dark transition-all duration-300 flex flex-col'>
       { /* Logo */}
       <div className=''>
         OnlyDevs
@@ -69,6 +70,7 @@ export const Sidebar = () => {
       </nav>
       <BtnToggleTheme/>
       <BtnLogout/>
+      <BtnNewPost/>
     </div>
   )
 }

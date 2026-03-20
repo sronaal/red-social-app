@@ -3,7 +3,7 @@ import React from 'react'
 
 export const BtnLogout = () => {
   return (
-    <div className='flex items-center gap-3 p-2 rounded-lg hover:bg-gray-100 dark:hover:bg-primary/20 transition-all justify-center cursor-pointer'>
+    <div className='flex items-center gap-3 p-2 rounded-lg hover:bg-gray-100 dark:hover:bg-primary/20 transition-all justify-start cursor-pointer'>
         <Icon icon={"solar:logout-2-bold-duotone"} height={24} width={24} />
         <span>Cerrar Sesión</span>
     </div>
