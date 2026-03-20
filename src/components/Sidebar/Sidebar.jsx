@@ -49,8 +49,9 @@ export const Sidebar = () => {
   return (
     <div className='h-screen p-2 bg-white dark:bg-bg-dark transition-all duration-300 flex flex-col'>
       { /* Logo */}
-      <div className=''>
-        OnlyDevs
+      <div className='h-8 w-8 rounded-full bg-blue-100 text-primary font-bold 
+      text-xs flex items-center justify-center m-2 '>
+        OD
       </div>
       { /* Nav */}
       <nav className='flex-1 flex flex-col gap-2 items-center'>
