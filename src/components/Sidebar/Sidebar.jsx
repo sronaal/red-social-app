@@ -1,6 +1,7 @@
 import { Icon } from "@iconify/react"
 import { NavLink } from "react-router-dom"
 import { BtnToggleTheme } from "../ui/button/BtnToggleTheme"
+import { BtnLogout } from "../ui/button/BtnLogout"
 
 export const Sidebar = () => {
 
@@ -67,6 +68,7 @@ export const Sidebar = () => {
         }
       </nav>
       <BtnToggleTheme/>
+      <BtnLogout/>
     </div>
   )
 }
