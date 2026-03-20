@@ -1,5 +1,6 @@
 import { Icon } from "@iconify/react"
 import { NavLink } from "react-router-dom"
+import { BtnToggleTheme } from "../ui/button/BtnToggleTheme"
 
 export const Sidebar = () => {
 
@@ -60,10 +61,12 @@ export const Sidebar = () => {
                 <Icon icon={item.icon} width={24} height={24} />
                 <span>{item.label}</span>
               </NavLink>
+              
             )
           })
         }
       </nav>
+      <BtnToggleTheme/>
     </div>
   )
 }
