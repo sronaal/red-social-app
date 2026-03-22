@@ -1,5 +1,6 @@
 import { Icon } from "@iconify/react"
 import { Header } from "../components/HomePageComponent/Header"
+import { InputPublicar } from "../components/HomePageComponent/InputPublicar"
 
 export const HomePage = () => {
   return (
@@ -9,6 +10,9 @@ export const HomePage = () => {
           <div className="sticky top-0 z-10 border-b border-gray-200 dark:border-gray-600 px-4 py-3">
             <Header/>
           </div>
+          <div className="overflow-y-auto">
+              <InputPublicar/>
+            </div>
           Principal
         </article>
         <article>
