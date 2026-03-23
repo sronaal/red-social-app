@@ -1,5 +1,6 @@
 import { Icon } from '@iconify/react'
 import React from 'react'
+import { PostImageFrame } from './PostImageFrame'
 
 export const PublicacionCard = () => {
     return (
@@ -22,6 +23,9 @@ export const PublicacionCard = () => {
             </div>
             <div className='mt-3'>
                 <p className='mb-2'>Titulo</p>
+                <div>
+                    <PostImageFrame />
+                </div>
             </div>
         </div>
     )
