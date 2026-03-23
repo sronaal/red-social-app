@@ -12,7 +12,7 @@ export const HomePage = () => {
           </div>
           <div className="overflow-y-auto">
               <InputPublicar/>
-            </div>
+          </div>
           Principal
         </article>
         <article>
