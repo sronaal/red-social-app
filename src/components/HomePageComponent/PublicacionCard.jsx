@@ -24,8 +24,20 @@ export const PublicacionCard = () => {
             <div className='mt-3'>
                 <p className='mb-2'>Titulo</p>
                 <div>
-                    <PostImageFrame src={"https://images.unsplash.com/photo-1566895291281-ea63efd4bdbc?fm=jpg&q=60&w=3000&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTF8fDklM0ExNnxlbnwwfHwwfHx8MA%3D%3D"} />
+                    <PostImageFrame src={"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcREmC4lseasIb9oyTvHOQaySzYBooGkURHbaA&s"} />
                 </div>
+                <div className='flex justify-between mt-4'>
+                    <button>
+                        <Icon icon="mdi:heart-outline" className="text-3xl p-1 rounded-full text-gray-300 hover:bg-gray-600 cursor-pointer" />
+                    </button>
+                    <button>
+                        <Icon icon="mdi:comment-outline" className="text-3xl p-1 rounded-full text-gray-300 hover:bg-gray-600 cursor-pointer" />
+                    </button>
+                    <button>
+                        <Icon icon="mdi:share-outline" className="text-3xl p-1 rounded-full text-gray-300 hover:bg-gray-600 cursor-pointer" />
+                    </button>
+                </div>
+
             </div>
         </div>
     )
