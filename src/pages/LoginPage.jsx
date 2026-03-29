@@ -1,6 +1,14 @@
 import { Icon } from '@iconify/react'
+import { useState } from 'react'
 
 export const LoginPage = () => {
+
+    const [showPassword, setShowPassword] = useState(false)
+
+    const togglePassswordVisibility = () => {
+        setShowPassword(!showPassword);
+    }
+
     return (
         <div className='flex h-screen w-full'>
             {/** Lado Izquierdo */}
@@ -23,10 +31,15 @@ export const LoginPage = () => {
                         <div className='mb-4'>
                             <input type="text" className='w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-[#00aff0]' placeholder='Correo electrónico o nombre de usuario' />
                         </div>
-                        <div className='mb-4'>
-                            <input type="password" className='w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-[#00aff0]' placeholder='Contraseña' />
+                        <div className='relative mb-4'>
+                            <input type={ showPassword ? "text" : "password" } className='w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-[#00aff0]' placeholder='Contraseña' />
+                            <button type="button" onClick={togglePassswordVisibility} className='absolute top-1/2 -translate-y-1/2 right-3 text-gray-600 cursor-pointer'>
+                                <Icon icon={  showPassword ? "mdi:eye" : "mdi:eye-off" } />
+                            </button>
                         </div>
-                        <button type="submit" className='w-full bg-[#00aff0] text-white py-3 rounded-lg hover:bg-[#0099cc] transition-colors'>Iniciar Sesión</button>
+                        <button type="submit" className='w-full bg-[#a1a1a1] text-white py-3 rounded-full hover:bg-[#0099cc] transition-colors cursor-pointer'>
+                            
+                            Iniciar Sesión</button>
                     </form>
                 </div>
             </section>
